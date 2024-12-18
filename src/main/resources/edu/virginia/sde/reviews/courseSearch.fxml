@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.virginia.sde.reviews.controllers.CourseSearchController">
+    <VBox spacing="10" alignment="CENTER" layoutX="10" layoutY="10">
+        <Label text="Course Search" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+        
+        <!-- Search Fields -->
+        <HBox spacing="10">
+            <TextField fx:id="subjectSearchField" promptText="Subject"/>
+            <TextField fx:id="numberSearchField" promptText="Number"/>
+            <TextField fx:id="titleSearchField" promptText="Title"/>
+            <Button fx:id = "searchButton" onAction="#handleSearch" text="Search"/>
+        </HBox>
+        
+        <!-- Course List -->
+        <ListView fx:id="courseListView" prefHeight="400.0" prefWidth="600.0" />
+        
+        <!-- Add Course Section -->
+        <VBox spacing="5">
+            <Label text="Add New Course" style="-fx-font-weight: bold;"/>
+            <TextField fx:id="newSubjectField" promptText="Subject (2-4 letters)"/>
+            <TextField fx:id="newNumberField" promptText="Number (4 digits)"/>
+            <TextField fx:id="newTitleField" promptText="Title"/>
+            <Button onAction="#handleAddCourse" text="Add Course"/>
+        </VBox>
+        
+        <!-- Navigation -->
+        <HBox spacing="10">
+            <Button onAction="#handleMyReviews" text="My Reviews"/>
+            <Button onAction="#handleLogout" text="Logout"/>
+        </HBox>
+        
+        <Label fx:id="messageLabel" textFill="RED"/>
+    </VBox>
+</AnchorPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" 
+            fx:controller="edu.virginia.sde.reviews.controllers.CourseReviewController">
+    <VBox spacing="20" alignment="CENTER" layoutX="10" layoutY="10">
+        <padding>
+            <Insets top="20" right="20" bottom="20" left="20"/>
+        </padding>
+        
+        <!-- Course Information -->
+        <Label fx:id="courseLabel" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+        <Label fx:id="averageRatingLabel" style="-fx-font-size: 18px;"/>
+        
+        <!-- Reviews List -->
+        <ListView fx:id="reviewsListView" prefHeight="300.0" prefWidth="600.0"/>
+        
+        <!-- Add/Edit Review Section -->
+        <VBox spacing="10" alignment="CENTER">
+            <Label text="Your Review" style="-fx-font-weight: bold;"/>
+            <HBox spacing="10" alignment="CENTER">
+                <Label text="Rating:"/>
+                <ComboBox fx:id="ratingComboBox" promptText="Select Rating"/>
+            </HBox>
+            <TextArea fx:id="commentArea" promptText="Enter your comment (optional)" 
+                      prefRowCount="3" prefColumnCount="40"/>
+            <HBox spacing="10" alignment="CENTER">
+                <Button fx:id="submitButton" onAction="#handleSubmit" text="Submit Review"/>
+                <Button fx:id="deleteButton" onAction="#handleDelete" text="Delete Review"/>
+            </HBox>
+        </VBox>
+        
+        <!-- Navigation and Messages -->
+        <Button onAction="#handleBack" text="Back to Course Search"/>
+        <Label fx:id="messageLabel" textFill="RED"/>
+    </VBox>
+</AnchorPane> 

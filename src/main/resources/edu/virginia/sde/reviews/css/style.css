@@ -1,0 +1,104 @@
+.root {
+    -fx-background-image: url("../images/bg.jpg");
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+}
+
+#login{
+    -fx-font-size: 50px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Segoe UI Black";
+    -fx-text-fill: black;
+
+    -fx-padding: 20px;
+    -fx-border-insets: 20px;
+    -fx-background-insets: 20px;
+}
+
+.label{
+    -fx-font-family: Dubai;
+}
+
+#usernameField, #passwordField {
+    -fx-padding: 20px 40px;
+    -fx-border-insets: 10px;
+    -fx-background-insets: 10px;
+    -fx-background-radius: 50px;
+
+    -fx-font-family: "Dubai Medium";
+    -fx-text-fill: #333333;
+    -fx-font-size: 14px;
+    -fx-pref-width: 200px;
+}
+
+.text-field{
+    -fx-padding: 15px 25px;
+    -fx-border-insets: 5px;
+    -fx-background-insets: 5px;
+    -fx-background-radius: 50px;
+
+    -fx-font-family: "Dubai Medium";
+    -fx-text-fill: #333333;
+    -fx-font-size: 12px;
+    -fx-pref-width: 150px;
+}
+
+#passwordReq{
+    -fx-font-family: "Dubai";
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-font-size: 15px;
+    -fx-padding: 10px;
+}
+
+.button {
+    -fx-font-family: "Dubai Medium";
+    -fx-background-color: #333333;
+    -fx-background-radius: 50px;
+
+    -fx-text-fill: floralwhite;
+    -fx-font-size: 12px;
+    -fx-padding: 5px 15px;
+    -fx-pref-width: 150px;
+}
+
+.button:hover {
+    -fx-background-color: rgba(79, 79, 79, 0.92);
+    -fx-background-radius: 50px;
+}
+
+.button:pressed {
+    -fx-background-color: rgba(51, 51, 51, 0.93);
+    -fx-background-radius: 50px;
+}
+
+#buttonContainer{
+    -fx-spacing: 20px;
+}
+
+#error{
+    -fx-text-fill: #bb2323;
+    -fx-font-family: Dubai;
+}
+
+#loginButton, #create, #close{
+    -fx-font-family: "Dubai Medium";
+    -fx-background-color: #333333;
+    -fx-background-radius: 50px;
+
+    -fx-text-fill: floralwhite;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 30px;
+    -fx-pref-width: 200px;
+}
+
+#searchButton{
+    -fx-padding: 15px 25px;
+    -fx-border-insets: 5px;
+    -fx-background-insets: 5px;
+    -fx-background-radius: 50px;
+
+    -fx-font-family: "Dubai Medium";
+    -fx-pref-width: 150px;
+}
